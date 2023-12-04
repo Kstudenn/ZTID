@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- deklaracja typu pliku: HTML i języka dokoumentu -->
+
+<!-- sekcja nagłówkowa -->
+<head>
+  <!-- określenie kodowania znaków w pliku-->
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <!-- link do pliku css z ustawieniami graficznymi-->
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<!-- body zawiera "ciało" strony, czyli zawartość -->
+<body>
+  <!-- elementom można przypisać ID aby można było łatwiej je rozpoznać -->
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+
+    <!-- formularz logowania -->
+    <form id="login-form">
+      <!-- elementy do wpisywania loginu,hasła i zatwierdzania danych do wysłania-->
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+
+  </main>
+  <!-- dodanie źródła ze skryptami-->
+  <script src="login.js"></script>
+</body>
+</html>
